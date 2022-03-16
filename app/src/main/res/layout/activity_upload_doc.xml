@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideInset"
+    tools:context=".UploadDoc">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40mdp"
+        android:background="@drawable/box"
+        android:backgroundTint="#CAD6D8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_20mdp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/arrow_back_36"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/allerta"
+        android:text="Upload"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="@dimen/_100mdp"
+        android:layout_height="@dimen/_100mdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/read" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Browse Docs"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        style="@android:style/Widget.DeviceDefault.Light.EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Author name-"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Publish/Upload"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:maxLines="2"
+        android:text="Document name here"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.56" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
