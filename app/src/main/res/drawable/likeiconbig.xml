@@ -4,6 +4,7 @@
     <item
         android:drawable="@drawable/heart"
         android:width="@dimen/_24mdp"
-        android:height="@dimen/_24mdp" />
+        android:height="@dimen/_24mdp"
+        />
 
 </layer-list >

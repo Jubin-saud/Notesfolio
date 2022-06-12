@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_marginTop="2dp"
-        android:background="#989898"
+        android:background="@color/mygrey"
         app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
 
@@ -119,7 +119,7 @@
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_marginTop="8dp"
-        android:background="#989898"
+        android:background="@color/mygrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/share" />
