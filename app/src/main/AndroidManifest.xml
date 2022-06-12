@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Notesfolio">
         <activity
+            android:name=".QandAActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Q_AActivity"
+            android:exported="false" />
+        <activity
             android:name=".EditProfile"
             android:exported="false" />
         <activity
