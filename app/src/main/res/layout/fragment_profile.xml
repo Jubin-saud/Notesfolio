@@ -11,38 +11,55 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50mdp"
         android:background="@drawable/box"
-        android:backgroundTint="#CAD6D8"
+        android:backgroundTint="@color/mygrey2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50mdp"
+        android:background="@drawable/box"
+        android:backgroundTint="@color/mygrey2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/arrow_back_36"
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_30mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.69"
+        app:srcCompat="@drawable/ic_menu" />
 
-    <TextView
-        android:id="@+id/textView7"
+    <com.vks.RoundTextView
+        android:id="@+id/setdocumentName"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_30mdp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:fontFamily="@font/allerta"
-        android:text="Username Here"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="screen"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawablePadding="8dp"
+        android:hint="Search documents"
+        android:padding="10dp"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.89"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:rv_cornerRadius="50dp"
+        app:rv_strokeColor="#B4631A1A"
+        app:rv_strokeWidth="1dp"
+        tools:ignore="HardcodedText" />
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imageView1"

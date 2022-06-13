@@ -46,7 +46,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/profile_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/profile_image"
-        app:srcCompat="@drawable/ic_menu" />
+        app:srcCompat="@drawable/menu" />
 
     <TextView
         android:id="@+id/textquestion"
